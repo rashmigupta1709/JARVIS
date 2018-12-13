@@ -1,0 +1,68 @@
+{
+	"modelName": "IronManSuite",
+	"id": "1",
+	"time_received": "22-10-2018T12:45:43.511Z",
+	"time_created": "22-10-2018T12:45:43.511Z",
+	"version": "1.0",
+
+	"Environment": {
+
+		"Environment_elements": [{
+				"type": "EnvironmentElement",
+				"name": "enemy",
+				"id": "2",
+				"label": ["enemy_environment"],
+				"x-coordinate": "300",
+				"y-coordinate": "300"
+
+			},
+
+			{
+				"type": "EnvironmentElement",
+				"name": "external_operator",
+				"id": "3",
+				"label": ["external_operator_environment"],
+				"x-coordinate": "400",
+				"y-coordinate": "300"
+
+			}
+
+		],
+
+		"System_element": {
+			"type": "SystemElement",
+			"name": "weapons_system",
+			"id": "4",
+			"label": ["weapon_inventory", "Armor_Control_Unit", "HUD"],
+			"x-coordinate": "300",
+			"y-coordinate": "100"
+
+		},
+
+		"Connections": [{
+				"type": "informationFlow",
+				"name": "enemy_location_connection",
+				"id": "5",
+				"label": ["enemy_info"],
+				"source": "2",
+				"target": "4",
+				"weight": "2"
+
+			},
+
+			{
+				"type": "energyFlow",
+				"name": "external_operator_connection",
+				"id": "6",
+				"label": ["operator_info"],
+				"source": "3",
+				"target": "4",
+				"weight": "3"
+
+			}
+		]
+
+
+
+	}
+}
