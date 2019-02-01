@@ -1,16 +1,16 @@
 {
-	"modelName": "IronManSuite",
+	"modelName": "IronManSuite2",
 	"id": "1",
 	"time_received": "22-10-2018T12:45:43.511Z",
 	"time_created": "22-10-2018T12:45:43.511Z",
-	"version": "1.0",
+	"version": "2.0",
 
 	"Environment": {
 
 		"Environment_elements": [{
 				"type": "EnvironmentElement",
-				"name": "enemy",
-				"id": "2",
+				"name": "enemy2",
+				"id": "22",
 				"label": ["enemy_environment"],
 				"x-coordinate": "300",
 				"y-coordinate": "300"
@@ -19,8 +19,8 @@
 
 			{
 				"type": "EnvironmentElement",
-				"name": "external_operator",
-				"id": "3",
+				"name": "external_operator2",
+				"id": "23",
 				"label": ["external_operator_environment"],
 				"x-coordinate": "400",
 				"y-coordinate": "300"
@@ -31,8 +31,8 @@
 
 		"System_element": {
 			"type": "SystemElement",
-			"name": "weapons_system",
-			"id": "4",
+			"name": "weapons_system2",
+			"id": "24",
 			"label": ["weapon_inventory", "Armor_Control_Unit", "HUD"],
 			"x-coordinate": "300",
 			"y-coordinate": "100"
@@ -41,22 +41,22 @@
 
 		"Connections": [{
 				"type": "informationFlow",
-				"name": "enemy_location_connection",
-				"id": "5",
+				"name": "enemy_location_connection2",
+				"id": "25",
 				"label": ["enemy_info"],
-				"source": "2",
-				"target": "4",
+				"source": "22",
+				"target": "24",
 				"weight": "2"
 
 			},
 
 			{
 				"type": "energyFlow",
-				"name": "external_operator_connection",
-				"id": "6",
+				"name": "external_operator_connection2",
+				"id": "26",
 				"label": ["operator_info"],
-				"source": "3",
-				"target": "4",
+				"source": "23",
+				"target": "24",
 				"weight": "3"
 
 			}
